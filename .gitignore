@@ -1,3 +1,4 @@
+.mvn/
 .gitignore
 HELP.md
 target/
