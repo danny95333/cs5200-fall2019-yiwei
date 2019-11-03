@@ -68,6 +68,7 @@ public class CountTest {
 		}
 	}
 	//Validates Section per Course - write a test that validates the total number of sections per each course
+	@Test
 	public void countSectionsPerCourse() {
 		List<Course> courses = uniDao.findAllCourses();
 		for (Course c:courses) {
@@ -76,6 +77,7 @@ public class CountTest {
 		}
 	}
 	// Validates Section enrollments - write a test that validates the total number of students in each section
+	@Test
 	public void countStudentsPerSection() {
 		List<Section> sections = uniDao.findAllSections();
 		for (Section sec:sections) {
@@ -92,6 +94,7 @@ public class CountTest {
 		}
 	}
 	// Validates Section seats - write a test that validates the number of section seats
+	@Test
 	public void countSeatsPerSection() {
 		List<Section> sections = uniDao.findAllSections();
 		for (Section sec:sections) {
